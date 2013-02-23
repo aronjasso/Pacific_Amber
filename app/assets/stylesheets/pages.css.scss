@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
+
+/* Color Variables */
+// Blues
+$babyblue: #c6e8ee;
+$navyblue: #0c1926;
+// Yellows
+$yellow: #e3c855;
+
+/* General Styles */
+body { font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+img.block {
+	margin: 14px 0;
+	display: block;
+}
+
+/* Typeography Styles */
+h1, h2, h3, h4, h5, h6, p, a { font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h5 { font-weight: 600; }
+
+// Colors
+.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6, .white p, .white a { color: white; }
+.babyblue, .babyblue h1, .babyblue h2, .babyblue h3, .babyblue h4, .babyblue h5, .babyblue h6, .babyblue p, .babyblue a { color: $babyblue;}
+
+/* Heaader Styles */
+
+header ul.follow { 
+	margin: 0;
+
+	li { margin-left: 36px; }
+
+	.followimg { margin: 9px 0 10px; }
+
+	a {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 10px;
+
+		&:hover {
+			background: $yellow;
+			color: white;
+		}
+	}
+}
+
+/* Content Style */
+#pac_logo { margin: 40px 0 20px; }
+
+/* Footer Styles */
+
+/* Background Styles */
+.navyblue_bg { background: $navyblue;}
+.babyblue_bg { background: $babyblue;}
+// Img Backgrounds
+.img_vertical {
+	background-color: white;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover auto;
+	overflow: hidden;
+	width: 100%;
+
+	&.sailboat_bg { background-image: url(sailboat_bg.png); }
+}
