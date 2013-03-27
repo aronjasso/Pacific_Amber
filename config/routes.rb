@@ -3,6 +3,8 @@ PacificAmber::Application.routes.draw do
 
   match '/:id' => 'high_voltage/pages#show', :as => :static, :via => :get
   
+  resource :subscribers, :only => :create
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,1 @@
+ENV['MAILCHIMP_API_KEY'] = 'e26c9dfbde7ae07631eae4ca5fa13a1d-us6'

@@ -6,7 +6,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: db_development
+  database: pacific_dev
   username: root
   password: jasso2687
   socket: /tmp/mysql.sock
@@ -19,7 +19,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: db_test
+  database: pacific_test
   username: root
   password: jasso2687
   socket: /tmp/mysql.sock
@@ -29,6 +29,6 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: db_production
+  database: pacific_production
   pool: 5
   timeout: 5000

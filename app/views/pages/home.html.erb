@@ -1,7 +1,7 @@
 <header class="navyblue_bg">
 	<div class="row">
-		<div class="nine column centered">
-			<ul class="follow link-list babyblue">
+		<div class="large-9 column large-centered">
+			<ul class="follow inline-list babyblue">
 				<li><%= image_tag 'follow_us.png', :class => "followimg" %></li>
 				<li><a href="#">FACEBOOK</a></li>
 				<li><a href="#">TWITTER</a></li>
@@ -14,10 +14,20 @@
 
 <section>
 	<div class="row">
-		<div class="eight column centered text-center white">
+		<div class="large-8 column large-centered text-center white">
 			<%= image_tag 'pac_logo.png', :alt => "Pacific Amber Co.", :id => "pac_logo" %>
 			<h3>We will be launching our new site with our first collection of goods soon.</h3>
-			<a href="#" class="button">NOTIFY ME</a>
+
+			<div class="row collapse">
+				<%= form_for(Subscriber.new, as: :subscriber, url: subscribers_path(:subscriber)) do |f| %>
+					<div class="small-8 columns">
+				    <%= f.text_field :email, :class => "flat medium", :placeholder => "Email" %>
+				  </div>
+				  <div class="small-4 columns">
+				  	<%= f.submit "NOTIFY ME", :class => "button flat prefix" %>
+				  </div>
+				<% end %>
+			</div>
 		</div>
 	</div>
 </section>

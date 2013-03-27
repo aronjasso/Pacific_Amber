@@ -48,6 +48,24 @@ header ul.follow {
 
 /* Footer Styles */
 
+/* Form Styles */
+input[type="text"].flat {
+	border: none;
+	box-shadow: none;
+}
+
+input[type="text"].medium {
+	height: 36px;
+	font-size: .9em;
+}
+
+/* Button Styles */
+.button.flat {
+	background: #3d3d3d;
+	border: none;
+	box-shadow: none;
+}
+
 /* Background Styles */
 .navyblue_bg { background: $navyblue;}
 .babyblue_bg { background: $babyblue;}
