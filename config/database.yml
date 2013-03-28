@@ -23,5 +23,8 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: pacific_production
+  database: de6m88a36hr2bv
   pool: 5
+  username: isenpxwtgahpif
+  password: igq3-HYEHNct5Spl6ga0mRsntp
+  port: 5432
