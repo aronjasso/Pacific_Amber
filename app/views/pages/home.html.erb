@@ -3,10 +3,10 @@
 		<div class="large-9 column large-centered">
 			<ul class="follow inline-list babyblue">
 				<li><%= image_tag 'follow_us.png', :class => "followimg" %></li>
-				<li><a href="#">FACEBOOK</a></li>
-				<li><a href="#">TWITTER</a></li>
-				<li><a href="#">INSTAGRAM</a></li>
-				<li><a href="#">TUMBLR</a></li>
+				<li><a href="https://www.facebook.com/PacificAmberCo">FACEBOOK</a></li>
+				<li><a href="https://twitter.com/PacificAmberCo">TWITTER</a></li>
+				<li><a href="http://instagram.com/PacificAmberCo/">INSTAGRAM</a></li>
+				<li><a href="http://pacificamberco.tumblr.com/">TUMBLR</a></li>
 			</ul>
 		</div>
 	</div>
@@ -17,17 +17,30 @@
 		<div class="large-8 column large-centered text-center white">
 			<%= image_tag 'pac_logo.png', :alt => "Pacific Amber Co.", :id => "pac_logo" %>
 			<h3>We will be launching our new site with our first collection of goods soon.</h3>
-
-			<div class="row collapse">
-				<%= form_for(Subscriber.new, as: :subscriber, url: subscribers_path(:subscriber)) do |f| %>
-					<div class="small-8 columns">
-				    <%= f.text_field :email, :class => "flat medium", :placeholder => "Email" %>
-				  </div>
-				  <div class="small-4 columns">
-				  	<%= f.submit "NOTIFY ME", :class => "button flat prefix" %>
-				  </div>
+		</div>
+		<div class="large-6 large-centered column reveal_form">
+			<%= form_for(Subscriber.new, as: :subscriber, url: subscribers_path(:subscriber)) do |f| %>
+					<div class="fields">
+						<div class="row collapse">
+							<div class="small-6 columns">
+						    <%= f.text_field :first_name, :class => "flat large", :placeholder => "First Name" %>
+						  </div>
+						  <div class="small-6 columns">
+						  	<%= f.text_field :last_name, :class => "flat large", :placeholder => "Last Name" %>
+						  </div>
+						</div>
+						<div class="row">
+							<div class="small-12 column">
+								<%= f.text_field :email, :class => "flat large", :placeholder => "Email" %>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 column">
+							<%= f.submit "NOTIFY ME", :class => "button flat thick yellow_bg expand reveal_btn" %>
+						</div>
+					</div>
 				<% end %>
-			</div>
 		</div>
 	</div>
 </section>

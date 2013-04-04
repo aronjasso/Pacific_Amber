@@ -15,8 +15,9 @@ img.block {
 }
 
 /* Typeography Styles */
-h1, h2, h3, h4, h5, h6, p, a { font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
-h1, h2, h3, h4, h5, h5 { font-weight: 600; }
+h1, h2, h3, h4, h5, h5, a { font-family: 'BrandonGrotesque-Bold', Helvetica, Arial, sans-serif; font-weight: 600; }
+
+.text-center { text-align: center; }
 
 // Colors
 .white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6, .white p, .white a { color: white; }
@@ -34,7 +35,7 @@ header ul.follow {
 	a {
 		font-size: 16px;
 		font-weight: 600;
-		padding: 10px;
+		padding: 12px 10px 8px;
 
 		&:hover {
 			background: $yellow;
@@ -52,24 +53,53 @@ header ul.follow {
 input[type="text"].flat {
 	border: none;
 	box-shadow: none;
+	font-family: 'BrandonGrotesque-Bold', Helvetica, Arial, sans-serif;
 }
 
-input[type="text"].medium {
-	height: 36px;
-	font-size: .9em;
+input[type="text"].large {
+	height: 50px;
+	font-size: 1.2em;
 }
+
+.reveal_form input[type="text"] {
+	border-top: 1px solid rgb(219, 219, 219);
+	margin: 0;
+	color: #0c1926;
+}
+.reveal_form .row:first-child input[type="text"] { border-top: none; }
+.reveal_form .row .columns input[type="text"] { border-right: 1px solid rgb(219, 219, 219); }
+.reveal_form .row .columns:last-child input[type="text"] { border-right: none; }
+
 
 /* Button Styles */
 .button.flat {
 	background: #3d3d3d;
 	border: none;
 	box-shadow: none;
+	font-family: 'BrandonGrotesque-Bold', Helvetica, Arial, sans-serif;
 }
+.button.thick { padding: 17px 0; }
+
+.button.flat.yellow_bg { background: $yellow; }
+.button.flat.yellow_bg:hover { background: $navyblue; color: $yellow; }
 
 /* Background Styles */
 .navyblue_bg { background: $navyblue;}
 .babyblue_bg { background: $babyblue;}
+.yellow_bg { background: $yellow; }
 // Img Backgrounds
+.img_bg {
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
+	&.sailboat_bg { background-image: url(sailboat_bg.png); }
+}
 .img_vertical {
 	background-color: white;
 	background-position: center top;
